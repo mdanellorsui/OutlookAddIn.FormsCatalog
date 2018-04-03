@@ -79,13 +79,13 @@
                 <Label resid="groupLabel"/>
 					 
                 <Control xsi:type="Button" id="msgComposeInsertGist">
-                  <Label resid="insertGistLabel"/>
+                  <Label resid="insertFormsLabel"/>
                   <Supertip>
-                    <Title resid="insertGistTitle"/>
-                    <Description resid="insertGistDesc"/>
+                    <Title resid="insertFormsTitle"/>
+                    <Description resid="insertFormsDesc"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="24" resid="icon24"/>
+                    <bt:Image size="16" resid="icon16"/>
                     <bt:Image size="32" resid="icon32"/>
                     <bt:Image size="80" resid="icon80"/>
                   </Icon>
@@ -102,7 +102,7 @@
 
     <Resources>
       <bt:Images>
-        <bt:Image id="icon24" DefaultValue="https://localhost:3000/assets/if_import_17388_24.png"/>
+        <bt:Image id="icon16" DefaultValue="https://localhost:3000/assets/if_import_17388_16.png"/>
         <bt:Image id="icon32" DefaultValue="https://localhost:3000/assets/if_import_17388_32.png"/>
         <bt:Image id="icon80" DefaultValue="https://localhost:3000/assets/if_import_17388_80.png"/>
       </bt:Images>
@@ -114,10 +114,10 @@
       <bt:ShortStrings>
         <bt:String id="groupLabel" DefaultValue="Forms Catelog"/>
         <bt:String id="insertFormsLabel" DefaultValue="Insert Forms"/>
-        <bt:String id="insertGistTitle" DefaultValue="Forms Catelog"/>
+        <bt:String id="insertFormsTitle" DefaultValue="Forms Catelog"/>
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="insertGistDesc" DefaultValue="Displays list of Catelog forms that can be added to the email message"/>
+        <bt:String id="insertFormsDesc" DefaultValue="Displays list of Catelog forms that can be added to the email message"/>
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>
