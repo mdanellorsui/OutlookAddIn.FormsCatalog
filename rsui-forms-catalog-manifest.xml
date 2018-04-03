@@ -26,7 +26,7 @@
   <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/hi-res-icon.png"/>
 
   <!--If you plan to submit this add-in to the Office Store, uncomment the SupportUrl element below-->
-  <SupportUrl DefaultValue="[Insert the URL of a page that provides support information for the app]" />
+  <!--<SupportUrl DefaultValue="[Insert the URL of a page that provides support information for the app]" />-->
 
   <!-- Domains that will be allowed when navigating. For example, if you use ShowTaskpane and then have an href link, navigation will only be allowed if the domain is on this list. -->
   <AppDomains>
@@ -72,33 +72,31 @@
           <!-- Location of the Functions that UI-less buttons can trigger (ExecuteFunction Actions). -->
           <FunctionFile resid="functionFile" />
 
-          <!-- Message Read -->
-          <ExtensionPoint xsi:type="MessageReadCommandSurface">
-            <!-- Use the default tab of the ExtensionPoint or create your own with <CustomTab id="myTab"> -->
+          <!-- Message Compose -->
+          <ExtensionPoint xsi:type="MessageComposeCommandSurface">
             <OfficeTab id="TabDefault">
-              <!-- Up to 6 Groups added per Tab -->
-              <Group id="msgReadGroup">
-                <Label resid="groupLabel" />
-                <!-- Launch the add-in : task pane button -->
-                <Control xsi:type="Button" id="msgReadOpenPaneButton">
-                  <Label resid="paneReadButtonLabel" />
+              <Group id="msgComposeCmdGroup">
+                <Label resid="groupLabel"/>
+					 
+                <Control xsi:type="Button" id="msgComposeInsertGist">
+                  <Label resid="insertFormsLabel"/>
                   <Supertip>
-                    <Title resid="paneReadSuperTipTitle" />
-                    <Description resid="paneReadSuperTipDescription" />
+                    <Title resid="insertFormsTitle"/>
+                    <Description resid="insertFormsDesc"/>
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="icon16" />
-                    <bt:Image size="32" resid="icon32" />
-                    <bt:Image size="80" resid="icon80" />
+                    <bt:Image size="16" resid="icon16"/>
+                    <bt:Image size="32" resid="icon32"/>
+                    <bt:Image size="80" resid="icon80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="messageReadTaskPaneUrl" />
+                    <SourceLocation resid="insertFormPaneUrl" />
                   </Action>
                 </Control>
-                <!-- Go to http://aka.ms/ButtonCommands to learn how to add more Controls: ExecuteFunction and Menu -->
               </Group>
             </OfficeTab>
           </ExtensionPoint>
+
           <!-- Go to http://aka.ms/ExtensionPointsCommands to learn how to add more Extension Points: MessageRead, AppointmentOrganizer, AppointmentAttendee -->
         </DesktopFormFactor>
       </Host>
@@ -106,22 +104,25 @@
 
     <Resources>
       <bt:Images>
-        <bt:Image id="icon16" DefaultValue="https://localhost:3000/assets/icon-16.png"/>
-        <bt:Image id="icon32" DefaultValue="https://localhost:3000/assets/icon-32.png"/>
-        <bt:Image id="icon80" DefaultValue="https://localhost:3000/assets/icon-80.png"/>
+        <bt:Image id="icon16" DefaultValue="https://localhost:3000/assets/if_import_17388_16.png"/>
+        <bt:Image id="icon32" DefaultValue="https://localhost:3000/assets/if_import_17388_32.png"/>
+        <bt:Image id="icon80" DefaultValue="https://localhost:3000/assets/if_import_17388_80.png"/>
       </bt:Images>
       <bt:Urls>
         <bt:Url id="functionFile" DefaultValue="https://localhost:3000/function-file/function-file.html"/>
         <bt:Url id="messageReadTaskPaneUrl" DefaultValue="https://localhost:3000/index.html"/>
+        <bt:Url id="insertFormPaneUrl" DefaultValue="https://localhost:3000/msg-compose/insert-gist.html"/>        
       </bt:Urls>
       <bt:ShortStrings>
-        <bt:String id="groupLabel" DefaultValue="My Add-in Group"/>
+        <bt:String id="groupLabel" DefaultValue="Forms Catalog"/>
+        <bt:String id="insertFormsLabel" DefaultValue="Insert Forms"/>
+        <bt:String id="insertFormsTitle" DefaultValue="Insert from the Forms Catelog"/>
         <bt:String id="customTabLabel"  DefaultValue="My Add-in Tab"/>
         <bt:String id="paneReadButtonLabel" DefaultValue="Display all properties"/>
         <bt:String id="paneReadSuperTipTitle" DefaultValue="Get all properties"/>
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="paneReadSuperTipDescription" DefaultValue="Opens a pane displaying all available properties. This is an example of a button that opens a task pane."/>
+        <bt:String id="insertFormsDesc" DefaultValue="Displays list of Catelog forms that can be added to the email message"/>
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>
