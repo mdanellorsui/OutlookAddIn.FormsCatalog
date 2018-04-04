@@ -100,8 +100,7 @@
           <!-- Go to http://aka.ms/ExtensionPointsCommands to learn how to add more Extension Points: MessageRead, AppointmentOrganizer, AppointmentAttendee -->
         </DesktopFormFactor>
       </Host>
-    </Hosts>
-
+    </Hosts>      
     <Resources>
       <bt:Images>
         <bt:Image id="icon16" DefaultValue="https://localhost:3000/assets/if_import_17388_16.png"/>
@@ -110,8 +109,7 @@
       </bt:Images>
       <bt:Urls>
         <bt:Url id="functionFile" DefaultValue="https://localhost:3000/function-file/function-file.html"/>
-        <bt:Url id="messageReadTaskPaneUrl" DefaultValue="https://localhost:3000/index.html"/>
-        <bt:Url id="insertFormPaneUrl" DefaultValue="https://localhost:3000/msg-compose/insert-gist.html"/>        
+        <bt:Url id="insertFormPaneUrl" DefaultValue="https://localhost:3000/msg-compose/msg-compose.html"/>        
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="groupLabel" DefaultValue="Forms Catalog"/>
