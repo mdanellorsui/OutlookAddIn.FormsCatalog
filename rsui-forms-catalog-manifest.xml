@@ -78,7 +78,7 @@
               <Group id="msgComposeCmdGroup">
                 <Label resid="groupLabel"/>
 					 
-                <Control xsi:type="Button" id="msgComposeInsertGist">
+                <Control xsi:type="Button" id="msgComposeInsertForm">
                   <Label resid="insertFormsLabel"/>
                   <Supertip>
                     <Title resid="insertFormsTitle"/>
