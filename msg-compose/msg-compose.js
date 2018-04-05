@@ -7,22 +7,25 @@
 
 (function () {
 
-  // The initialize function must be run each time a new page is loaded
-  Office.initialize = function (reason) {
-    $(document).ready(function () {
+  $(document).ready(function () {
     //  $('#run').click(run);
 
       // Office.context.mailbox.item.notificationMessages.replaceAsync("progress1", {
       //   type: "errorMessage",
       //   message : "Foo Test"
       //   });
-      document.getElementById("insert-button").value= "Text Chgd";
+      var inBtn = document.getElementById("insert-button");
+      inBtn.innerText = "foo";
       //$("#insert-button").style="background:red";  
 
       //$('#insert-button').on('click', insertSelectedForms);
 
 
-    });
+  });
+
+  // The initialize function must be run each time a new page is loaded
+  Office.initialize = function (reason) {
+
   };
 
   function run() {
