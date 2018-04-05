@@ -4,6 +4,7 @@
  */
 
 'use strict';
+var client = 'unknown';
 
 (function () {
 
@@ -15,17 +16,22 @@
       //   message : "Foo Test"
       //   });
       var inBtn = document.getElementById("insert-button");
-      inBtn.innerText = "foo";
-      //$("#insert-button").style="background:red";  
+      inBtn.onclick = insertSelectedForms;
 
-      //$('#insert-button').on('click', insertSelectedForms);
+      $( "#message-displayJq" ).css( "border", "3px solid red" );
+      var msgJq = $('#message-displayJq')[0];
+      msgJq.innerText = client;
+      var msg = document.getElementById("message-display");
+      msg.innerText = "messages to go here!"
+
+//      $('#insert-button').on('click', insertSelectedForms);
 
 
   });
 
   // The initialize function must be run each time a new page is loaded
   Office.initialize = function (reason) {
-
+    client = 'could be office';
   };
 
   function run() {
@@ -34,13 +40,17 @@
      */
   }
 
-  function insertSelectedForms() {
-    Office.context.mailbox.item.notificationMessages.replaceAsync("addin-message", {
-      type: "informationalMessage",
-      message: "Insert forms button was pressed",
-      icon : "iconid",
-      persistent: false
-    });
+  function insertSelectedForms(obj) {
+
+    obj.currentTarget.innerText = "foo";
+    obj.currentTarget.style = "background: red";
+
+    // Office.context.mailbox.item.notificationMessages.replaceAsync("addin-message", {
+    //   type: "informationalMessage",
+    //   message: "Insert forms button was pressed",
+    //   icon : "iconid",
+    //   persistent: false
+    // });
   }
 
 
