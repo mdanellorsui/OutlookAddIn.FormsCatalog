@@ -15,18 +15,11 @@ var client = 'unknown';
       //   type: "errorMessage",
       //   message : "Foo Test"
       //   });
+
+
       var inBtn = document.getElementById("insert-button");
       inBtn.onclick = insertSelectedForms;
-
-      $( "#message-displayJq" ).css( "border", "3px solid red" );
-      var msgJq = $('#message-displayJq')[0];
-      msgJq.innerText = client;
-      var msg = document.getElementById("message-display");
-      msg.innerText = "messages to go here!"
-
-//      $('#insert-button').on('click', insertSelectedForms);
-
-
+      //      $('#insert-button').on('click', insertSelectedForms);
   });
 
   // The initialize function must be run each time a new page is loaded

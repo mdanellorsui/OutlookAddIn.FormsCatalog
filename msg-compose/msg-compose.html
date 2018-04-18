@@ -15,14 +15,30 @@
 
     <!-- Template styles -->
     <link href="msg-compose.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
    <main>
-      <h6>RSUI Forms Catalog:</h6>
-      <div><button id="insert-button">Insert Forms</button></div>
-      <div id="message-display"></div>
-      <div id="message-displayJq" style="background-color: darkcyan"></div>
-   </main>
+    <div class="ms-Grid-row">
+      <div class="ms-Grid-col ms-u-sm12 header ms-bgColor-themeLight">Header</div>
+    </div>
+    <div class="ms-Grid-row">
+      <div class="ms-Grid-col ms-u-sm2 ms-u-lg2" style="font-weight: bold"><em>RSG 40001	1203</em></div>
+      <div class="ms-Grid-col ms-u-sm2 ms-u-lg6" style="color:mediumblue"  >Commercial Property Coverage Part Declarations </div>
+      <div class="ms-Grid-col ms-u-sm1 ms-u-lg1">Property</div>
+      <div class="ms-Grid-col ms-u-sm1 ms-u-lg1">Dec Page</div>
+      <div class="ms-Grid-col ms-u-sm2 ms-u-lg2">Combined (Named Peril) | Combined (Property &amp; IM) | Property (Named Peril) | Property | Property</div>
+      <div class="ms-Grid-col ms-u-sm2 ms-u-lg2">09/15/2017</div>
+
+  </div>    
+    <div class="ms-Grid-row">
+      <div class="ms-Grid-col ms-u-sm12 footer ms-bgColor-themeLight">Footer
+        <div><button id="insert-button">Insert Forms</button></div>
+      </div>
+    </div>
+  </main>
+
+
    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
    <script type="text/javascript" src="../node_modules/showdown/dist/showdown.min.js"></script>
    <script type="text/javascript" src="../node_modules/urijs/src/URI.min.js"></script>
