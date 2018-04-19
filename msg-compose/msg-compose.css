@@ -1,3 +1,9 @@
 html {
-   font-family: Verdana, Geneva, sans-serif
+   font-family: Verdana, Geneva, sans-serif;
+}
+
+.utility-info {
+    border: 1px solid darkblue ;
+    text-align: center;
+    background-color: lightblue;
 }
