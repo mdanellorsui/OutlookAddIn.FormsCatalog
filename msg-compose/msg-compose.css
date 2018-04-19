@@ -8,7 +8,15 @@ html {
     background-color: lightblue;
 }
 
-.form-check-select {
-    color: red;
-    font-size: 60%;
+.r-form-button {
+    float: right;
+}
+
+.r-doc-num-chkbox {
+    font-size: 75%;
+    font-weight: bold;
+}
+
+.r-doc-num {
+    vertical-align: center;
 }
