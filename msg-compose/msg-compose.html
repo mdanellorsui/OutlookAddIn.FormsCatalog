@@ -23,7 +23,7 @@
 
     <div class='ms-Grid'>
 
-      <div class='ms-Grid-row' >
+      <div class='ms-Grid-row'>
         <div class='ms-Grid-col ms-u-sm1 refCol utility-info'>1</div>
         <div class='ms-Grid-col ms-u-sm1 refCol utility-info'>2</div>
         <div class='ms-Grid-col ms-u-sm1 refCol utility-info'>3</div>
@@ -44,22 +44,32 @@
       <div class="ms-Grid-row">
         <div class="ms-Grid-col ms-u-sm12 header ms-bgColor-themeLight">Header</div>
       </div>
+
+      <!-- Data Row -->
       <div class="ms-Grid-row">
-        <div class="ms-Grid-col ms-u-sm2 ms-u-lg2" style="font-weight: bold">
-          <em>RSG 40001 1203</em>
+        <div class="ms-CheckBox ms-Grid-col ms-u-lg1 ms-u-sm2">
+          <input tabindex="-1" type="checkbox" class="ms-CheckBox-input">
+          <label role="checkbox" class="ms-CheckBox-field" tabindex="0" aria-checked="false" name="checkboxa">
+          </label>
         </div>
-        <div class="ms-Grid-col ms-u-sm2 ms-u-lg6" style="color:mediumblue">Commercial Property Coverage Part Declarations </div>
-        <div class="ms-Grid-col ms-u-sm1 ms-u-lg1">Property</div>
-        <div class="ms-Grid-col ms-u-sm1 ms-u-lg1">Dec Page</div>
-        <div class="ms-Grid-col ms-u-sm2 ms-u-lg2">Combined (Named Peril) | Combined (Property &amp; IM) | Property (Named Peril) | Property | Property</div>
-        <div class="ms-Grid-col ms-u-sm2 ms-u-lg2">09/15/2017</div>
+        <div class="ms-Grid-col ms-u-lg2 ms-u-sm6 ms-fontSize-xs ms-fontWeight-semibold">RSG 40001 1203</div>
+        <div class="ms-Grid-col ms-u-lg4 ms-u-sm12 ms-fontColor-themeDark">Commercial Property Coverage Part Declarations </div>
+        <div class="ms-Grid-col ms-u-lg1 ms-u-sm4 ms-fontSize-s">Property</div>
+        <div class="ms-Grid-col ms-u-lg1 ms-u-sm4 ms-fontSize-s">Dec Page</div>
+        <div class="ms-Grid-col ms-u-lg1 ms-u-sm4 ms-fontSize-s">09/15/2017</div>
+        <div class="ms-Grid-col ms-u-lg3 ms-u-sm12 ms-fontSize-xs">Combined (Named Peril) | Combined (Property &amp; IM) | Property (Named Peril) | Property | Property</div>
 
       </div>
+
       <div class="ms-Grid-row">
         <div class="ms-Grid-col ms-u-sm12 footer ms-bgColor-themeLight">Footer
-          <div>
-            <button id="insert-button">Insert Forms</button>
-          </div>
+          <button class="ms-Button ">
+            <span id="cancel-button" class="ms-Button-label">Cancel</span>
+          </button>
+          <button class="ms-Button ms-Button--primary">
+            <span id="insert-button" class="ms-Button-label">Insert Forms</span>
+          </button>
+
         </div>
       </div>
     </div>
@@ -70,6 +80,7 @@
   <script type="text/javascript" src="../node_modules/showdown/dist/showdown.min.js"></script>
   <script type="text/javascript" src="../node_modules/urijs/src/URI.min.js"></script>
 
+  <script type="text/javascript" src="../node_modules/office-ui-fabric-js/dist/js/fabric.min.js"></script>
   <script type="text/javascript" src="msg-compose.js"></script>
 </body>
 

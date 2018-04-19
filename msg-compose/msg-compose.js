@@ -16,7 +16,6 @@ var client = 'unknown';
       //   message : "Foo Test"
       //   });
 
-
       var inBtn = document.getElementById("insert-button");
       inBtn.onclick = insertSelectedForms;
       //      $('#insert-button').on('click', insertSelectedForms);
