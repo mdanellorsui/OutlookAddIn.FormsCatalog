@@ -16,6 +16,18 @@ var client = 'unknown';
       //   message : "Foo Test"
       //   });
 
+      var CheckBoxElements = document.querySelectorAll(".ms-CheckBox");
+      for (var i = 0; i < CheckBoxElements.length; i++) {
+        new fabric['CheckBox'](CheckBoxElements[i]);
+      }
+
+      var ButtonElements = document.querySelectorAll(".ms-Button");
+      for (var i = 0; i < ButtonElements.length; i++) {
+        new fabric['Button'](ButtonElements[i], function() {
+          // Insert Event Here
+        });
+      }
+
       var inBtn = document.getElementById("insert-button");
       inBtn.onclick = insertSelectedForms;
       //      $('#insert-button').on('click', insertSelectedForms);

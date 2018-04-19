@@ -8,3 +8,7 @@ html {
     background-color: lightblue;
 }
 
+.form-check-select {
+    color: red;
+    font-size: 60%;
+}
