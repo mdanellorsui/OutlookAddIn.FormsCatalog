@@ -7,7 +7,7 @@
   <title>RSUI Forms</title>
 
   <!-- Office JavaScript API -->
-  <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.debug.js"></script>
+  <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
 
   <!-- LOCAL -->
   <link rel="stylesheet" href="../node_modules/office-ui-fabric-js/dist/css/fabric.min.css" />
@@ -42,7 +42,7 @@
 
 
       <div class="ms-Grid-row">
-        <div class="ms-Grid-col ms-u-sm12 header ms-bgColor-themeLight">Header</div>
+        <div id="header-message" class="ms-Grid-col ms-u-sm12 header ms-bgColor-themeLight">Header</div>
       </div>
 
       <!-- Data Row using checkbox without text  -->
@@ -151,7 +151,8 @@
       </div>
  -->
       <div class="ms-Grid-row">
-        <div class="ms-Grid-col ms-u-sm12 footer ms-bgColor-themeLight">Footer
+        <div id="footer-message" class="ms-Grid-col ms-u-sm12 footer ms-bgColor-themeLight">Footer</div>
+        <div class="ms-Grid-col ms-u-sm12 footer ms-bgColor-themeLight">
           <button class="ms-Button ms-Button--primary r-form-button">
             <span id="insert-button" class="ms-Button-label">Insert Forms</span>
           </button>
@@ -165,7 +166,6 @@
 
 
   <script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
-  <script type="text/javascript" src="../node_modules/showdown/dist/showdown.min.js"></script>
   <script type="text/javascript" src="../node_modules/urijs/src/URI.min.js"></script>
 
   <script type="text/javascript" src="../node_modules/office-ui-fabric-js/dist/js/fabric.min.js"></script>
